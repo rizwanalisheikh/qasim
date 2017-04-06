@@ -11,7 +11,7 @@ app.config(function($stateProvider, $urlRouterProvider){
 	    .state('home', {
 	      url: "/",
 	      templateUrl: "templates/main.html",
-	      controller: 'templates.CalculatorController',
+	      controller: 'CalculatorController',
 	      
 	    })
 	    .state('viewPost1', {
