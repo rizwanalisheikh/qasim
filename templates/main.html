@@ -1,0 +1,56 @@
+<script src= "templates/calculator.js"></script>
+
+
+<h1></h1>
+<p class="productstext">High scale industrial <br>products recommended <br>by Experts </p>
+<p class="solutionstext">Solar products are <br>specificaly assembled for<br> high effeciency </p>
+<div class='col-sm-6'>
+  <div class="all" style="position:relative;float:right;">
+	<div class="jumbotron" style="
+    display: flex;
+    top:3px;
+    left: 284px;
+    align-items: center;
+    position: relative;
+    background-color: transparent;
+">
+<div class="calculator">
+  <div ng-app="CalculatorApp" ng-controller="templates.CalculatorController">
+  <p><input type="number" ng-model="a"></p>
+  <p><input type="number" ng-model="b"></p>
+  <p><select ng-model="operator">
+        <option>+</option>
+        <option>*</option>
+        <option>-</option>
+        <option>/</option>
+     </select></p>
+  <p>{{ result() }}</p>
+
+	<p></p>
+	</div>
+	</div>
+</div>
+<div class='col-sm-6'>
+	<div class="bcc">
+<div class="w1">	
+  <p id="rc">Products</p>
+  <p id="rc1"></p>
+</div>
+<div class="w2">
+  <p id="rc2">Solutions</p>
+  <p id="para"></p>
+  <p id="rc3"></p>
+</div>
+  <div class='w'>
+  <p id="rc4"><bold>Dry Batteries</p>
+  <p id="rc5">Solar Inverter</p>
+  <p id="rc6"></p>
+  <p id="rc7"></p>
+  <div class="m">
+  <marquee direction="right" behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();"><img src="images/marquee.png" style="width:507px;height:86px;position: relative;
+    top: -1px;"></marquee>
+</div>
+  </div>
+</div>
+</div>
+</div>

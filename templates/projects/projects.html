@@ -1,0 +1,49 @@
+<style>
+.mySlides {display:none;border-width: 5px;
+  overflow: hidden;
+  display: block;
+border-style: none;
+border-color:blue;}
+</style>
+<div id="page-wrapper" class="5grid-layout">
+  <!--div class="row titlebg">
+    <h2>One Column</h2>
+  </div>
+  <div class="row" id="content">
+    <div class="12u">
+      <section>
+        <div class="post">
+<div class="w3-container">
+  <p>Animated Slides</p>
+  <p>Slide or fade in an element from the top, bottom, left or right of the screen with the w3-animate-* classes.</p>
+</div-->
+
+<div class="w3-content w3-section" style="position:relative;width:972px;overflow:hidden;left:99px;">
+  <img class="mySlides w3-animate-top" src="pics01.jpg"  >
+  <img class="mySlides w3-animate-bottom" src="pics02.jpg" >
+  <img class="mySlides w3-animate-top" src="pics03.jpg"  >
+  <img class="mySlides w3-animate-bottom" src="pics04.jpg" >
+</div>
+
+
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2500);    
+}
+</script>
